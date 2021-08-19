@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.5625rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.625rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 4.1875rem 1.5rem;
+}
+
+@media only screen and (min-width: 1044px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+    -ms-grid-columns: (1fr)[4];
+        grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+    gap: 1.68rem;
+    max-height: 570px;
+  }
+}
+
+.name--info {
+  opacity: 0.9;
+  font-size: 0.75rem;
+}
+
+.author--info {
+  opacity: 0.5;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 24px 35px 34px 35px;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 1044px) {
+  .card {
+    margin-bottom: 0;
+    padding: 25px 38px;
+  }
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.93rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__header img {
+  width: 30px;
+  height: 31px;
+  border-radius: 50%;
+}
+
+.card__description {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.card__purple {
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-color: #7541c8;
+  color: white;
+  background-position: 93% 0%;
+}
+
+@media only screen and (min-width: 1044px) {
+  .card__purple {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+.card__grey {
+  background-color: #48556a;
+  color: white;
+}
+
+@media only screen and (min-width: 1044px) {
+  .card__grey {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+  }
+}
+
+.card__white__small {
+  background-color: white;
+}
+
+.card__white__large {
+  background-color: white;
+}
+
+@media only screen and (min-width: 1044px) {
+  .card__white__large {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/ 3;
+  }
+}
+
+.card__dark {
+  background-color: #19212e;
+  color: white;
+}
+
+@media only screen and (min-width: 1044px) {
+  .card__dark {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
+}
+/*# sourceMappingURL=style.css.map */
